@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="Assets/logo.6c17d4a.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .scroll-header {
+          transition: top 0.3s ease-in-out;
+        }
+
+        .banner {
+            perspective: 1000px;
+        }
+
+        .banner-image {
+            transform-origin: bottom;
+        }
+
+        .banner-text {
+            transition: transform 0.3s ease-in-out;
+        }
+      </style>
+    <title>Suit Media</title>
+</head>
+<body>
+    <header>
+        <nav class="flex bg-[#f57c00] justify-between px-28">
+            <div>
+                <a href="">
+                    <img src="Assets/suitmedia-logo-removebg-preview.png" alt="Suit Media" class="w-32">
+                </a>
+            </div>
+            <div class="self-center text-white">
+                <ul class="flex gap-6">
+                    <li class="hover:border-b-2 hover:border-white"><a href="">Work</a></li>
+                    <li class="hover:border-b-2 hover:border-white"><a href="">About</a></li>
+                    <li class="hover:border-b-2 hover:border-white"><a href="">Services</a></li>
+                    <li class="hover:border-b-2 hover:border-white"><a href="">Ideas</a></li>
+                    <li class="hover:border-b-2 hover:border-white"><a href="">Careers</a></li>
+                    <li class="hover:border-b-2 hover:border-white"><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto  h-full">
+
+        <div class="container mx-auto h-full items-center">
+            <div class="banner overflow-hidden w-[1300px]">
+                <img src="Assets/banner.svg" alt="Banner Image"
+                    class="">
+            </div>
+
+  
+            <div
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full">
+                <h1
+                    class="text-4xl font-bold text-white mb-4 banner-text">Ideas
+                </h1>
+                <p
+                    class="text-lg text-white opacity-80 banner-text">Where all our great things begin
+                </p>
+            </div>
+        </div>
+
+    <div class="container my-10 p-20">
+
+        <div class="flex mb-4 gap-20">
+            <div class="flex space-x-4">
+                <label for="sort" class="text-md">Sort By:</label>
+                <select id="sort" class="px-10 py-1 text-sm border rounded-full">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                </select>
+            </div>
+            <div class="flex space-x-4">
+                <label for="page" class="text-md">Show per page:</label>
+                <select id="page" class="px-10 py-1 text-sm border rounded-full">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10 ">
+
+            <div class="bg-white rounded-xl shadow-lg shadow-gray-300">
+                <div>
+                    <img src="https://placekitten.com/400/300" alt="Post Thumbnail" class="w-full h-48 object-cover mb-4 lazyload">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2 line-clamp-3">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 text-sm mb-2">Published on: January 1, 2023</p>
+                    <p class="text-gray-700 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md shadow-gray-300 ">
+                <div>
+                    <img src="https://placekitten.com/400/300" alt="Post Thumbnail" class="w-full h-48 object-cover mb-4 lazyload">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2 line-clamp-3">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 text-sm mb-2">Published on: January 1, 2023</p>
+                    <p class="text-gray-700 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md shadow-gray-300">
+                <div>
+                    <img src="https://placekitten.com/400/300" alt="Post Thumbnail" class="w-full h-48 object-cover mb-4 lazyload">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2 line-clamp-3">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 text-sm mb-2">Published on: January 1, 2023</p>
+                    <p class="text-gray-700 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md shadow-gray-300">
+                <div>
+                    <img src="https://placekitten.com/400/300" alt="Post Thumbnail" class="w-full h-48 object-cover mb-4 lazyload">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2 line-clamp-3">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 text-sm mb-2">Published on: January 1, 2023</p>
+                    <p class="text-gray-700 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md shadow-gray-300">
+                <div>
+                    <img src="https://placekitten.com/400/300" alt="Post Thumbnail" class="w-full h-48 object-cover mb-4 lazyload">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2 line-clamp-3">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 text-sm mb-2">Published on: January 1, 2023</p>
+                    <p class="text-gray-700 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md shadow-gray-300">
+                <div>
+                    <img src="https://placekitten.com/400/300" alt="Post Thumbnail" class="w-full h-48 object-cover mb-4 lazyload">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2 line-clamp-3">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 text-sm mb-2">Published on: January 1, 2023</p>
+                    <p class="text-gray-700 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md shadow-gray-300">
+                <div>
+                    <img src="https://placekitten.com/400/300" alt="Post Thumbnail" class="w-full h-48 object-cover mb-4 lazyload">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2 line-clamp-3">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 text-sm mb-2">Published on: January 1, 2023</p>
+                    <p class="text-gray-700 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-md shadow-gray-300">
+                <div>
+                    <img src="https://placekitten.com/400/300" alt="Post Thumbnail" class="w-full h-48 object-cover mb-4 lazyload">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-2 line-clamp-3">Lorem Ipsum Dolor Sit Amet</h3>
+                    <p class="text-gray-500 text-sm mb-2">Published on: January 1, 2023</p>
+                    <p class="text-gray-700 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="programList">
+    </div>
+    
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('header');
+    
+        window.addEventListener('scroll', () => {
+          const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+          if (currentScroll > lastScrollTop) {
+            navbar.style.top = -${navbar.offsetHeight}px;
+          } else {
+
+            navbar.style.top = '0';
+            navbar.classList.add('bg-opacity-90', 'backdrop-blur-md');
+          }
+    
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+    <script>
+        // Sample data (replace this with your actual data)
+        const posts = [
+            { title: 'Lorem Ipsum Dolor Sit Amet', date: 'January 1, 2023', thumbnail: 'https://placekitten.com/400/300' },
+            // Add more posts as needed
+        ];
+    
+        function renderPrograms(filter) {
+        const programList = document.getElementById('programList');
+        programList.innerHTML = '';
+
+        programs.forEach(program => {
+            if (filter === 'all' || program.category === filter) {
+                const programCard = document.createElement('div');
+                programCard.className = 'bg-white p-4 rounded shadow-md cursor-pointer';
+                programCard.innerHTML = `
+                    <h3 class="text-lg font-semibold mb-2">${program.title}</h3>
+                    <p class="text-gray-500 mb-2">${program.category}</p>
+                `;
+
+                // Event listener to open the program page on click
+                programCard.addEventListener('click', function() {
+                    window.location.href = program.link;
+                });
+
+                programList.appendChild(programCard);
+            }
+        });
+    }
+
+    // Initial render
+    renderPrograms('all');
+
+    // Event listener for filter control
+    document.getElementById('filter').addEventListener('change', function() {
+        const selectedFilter = this.value;
+        renderPrograms(selectedFilter);
+    });
+    </script>
+        
+</body>
+</html>
